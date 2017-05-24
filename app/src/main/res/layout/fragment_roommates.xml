@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zavecz.splithouse.RoommatesFragment"
+    android:id="@+id/matesRelativeLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/noteF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Can only add 4 roommates."
+        android:textSize="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/mateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Rommates Name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/mateBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mateName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Add Roommate" />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/mate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/mateBt"
+        android:layout_marginTop="75dp"
+        android:text="none"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/mate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/mate1"
+        android:layout_marginTop="50dp"
+        android:text="none"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/mate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/mate2"
+        android:layout_marginTop="50dp"
+        android:text="none"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/mate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/mate3"
+        android:layout_marginTop="50dp"
+        android:text="none"
+        android:textSize="20dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribution: "
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/mate1"
+        android:layout_toStartOf="@+id/payAmmount1"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payAmmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignBaseline="@+id/payTv1"
+        android:layout_alignBottom="@+id/payTv1"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payTv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribution: "
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/mate2"
+        android:layout_toStartOf="@+id/payAmmount2"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payAmmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignBaseline="@+id/payTv2"
+        android:layout_alignBottom="@+id/payTv2"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payTv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribution: "
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/mate3"
+        android:layout_toStartOf="@+id/payAmmount3"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payAmmount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignBaseline="@+id/payTv3"
+        android:layout_alignBottom="@+id/payTv3"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payTv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contribution: "
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/mate4"
+        android:layout_toStartOf="@+id/payAmmount4"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/payAmmount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textSize="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignBaseline="@+id/payTv4"
+        android:layout_alignBottom="@+id/payTv4"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        />
+
+
+
+    <Button
+        android:id="@+id/hide1Bt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/payAmmount1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:onClick="hide1"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/hide2Bt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/payAmmount2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:onClick="hide2"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/hide3Bt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/payAmmount3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:onClick="hide3"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/hide4Bt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/payAmmount4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:onClick="hide4"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/clearBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:layout_above="@+id/applyBt"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/applyBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="Apply Bills"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zavecz.splithouse.BillsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/addBillBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billNameEt"
+        android:layout_centerHorizontal="true"
+        android:text="Add Bill" />
+
+    <EditText
+        android:id="@+id/billNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Name of the Bill" />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Can only add 5 bills."
+        android:textSize="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/addBillBt" />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/bill1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="none"
+        android:layout_below="@+id/addBillBt"
+        android:layout_margin="60dp"
+        android:textSize="25dp"
+        android:visibility="gone"/>
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/bill2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bill1"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"/>
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/bill3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bill2"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"/>
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/bill4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bill3"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"/>
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/bill5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="none"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/bill4"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"/>
+
+    <EditText
+        style="@style/TextView"
+        android:id="@+id/billPay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/bill1"
+        android:layout_marginLeft="225dp"
+        android:hint="$0.00"
+        android:text="0"
+        android:visibility="gone"/>
+    <EditText
+        style="@style/TextView"
+        android:id="@+id/billPay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/bill2"
+        android:layout_marginLeft="225dp"
+        android:hint="$0.00"
+        android:text="0"
+        android:visibility="gone"/>
+    <EditText
+        style="@style/TextView"
+        android:id="@+id/billPay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/bill3"
+        android:layout_marginLeft="225dp"
+        android:hint="$0.00"
+        android:text="0"
+        android:visibility="gone"/>
+    <EditText
+        style="@style/TextView"
+        android:id="@+id/billPay4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/bill4"
+        android:layout_marginLeft="225dp"
+        android:hint="$0.00"
+        android:text="0"
+        android:visibility="gone"/>
+    <EditText
+        style="@style/TextView"
+        android:id="@+id/billPay5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/bill5"
+        android:layout_marginLeft="225dp"
+        android:hint="$0.00"
+        android:text="0"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:text="Total everything up" />
+
+
+</RelativeLayout>
